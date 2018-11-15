@@ -2,7 +2,7 @@
 #include <ESP8266WebServer.h>
 #include <WiFiUdp.h>
 #include <functional>
-
+#include <credentials.h>
 void prepareIds();
 boolean connectWifi();
 boolean connectUDP();
@@ -13,8 +13,7 @@ void turnOffRelay();
 /*********************************/
 /*********************************/
  // You only need to modify folloing settings to get it to work woth Alexa and your network
-const char* ssid = "AntoWhat2.4";
-const char* password = "matomyTaboola25";
+
 String device_name= "stupid";// you can chage the device name from "DemoSwitch" to anything
  // local port to listen on
 /*********************************/
